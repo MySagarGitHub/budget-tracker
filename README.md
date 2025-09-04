@@ -6,5 +6,6 @@ ii)install clerk<br>
   npm install @clerk/nextjs<br>
 iii) lucide react
   npm i lucide-react  
-
+iv)shadcn-ui
+  npx shadcn-ui@latest init
 
