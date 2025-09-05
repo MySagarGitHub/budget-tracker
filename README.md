@@ -8,4 +8,6 @@ iii) lucide react
   npm i lucide-react  
 iv)shadcn-ui
   npx shadcn-ui@latest init
+   npx shadcn@latest add
+   npm i next-themes
 
