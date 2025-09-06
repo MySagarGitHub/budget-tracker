@@ -4,6 +4,8 @@ import Logo from "@/components/logo";
 import { usePathname } from 'next/navigation';
 import { buttonVariants } from './ui/button';
 import { cn } from '@/lib/utils';
+import { ThemeswitcherBtn } from './ThemeswitcherBtn';
+import { UserButton } from '@clerk/nextjs';
 function Navbar() {
   return (
   <>   
@@ -38,9 +40,13 @@ function DesktopNavbar() {
                 ))}
                 </div>
             </div>
+            <div className='flex items-center gap-2'>
+                <ThemeswitcherBtn />
+                <UserButton afterSignOutUrl="/sign-in" />
+            </div>
            </nav>
         </div>
-    )
+    );
 }
 function NavbarItem({label, link}: 
     {
