@@ -2,6 +2,8 @@
 import React from 'react'
 import Logo from "@/components/logo";
 import { usePathname } from 'next/navigation';
+import { buttonVariants } from './ui/button';
+import { cn } from '@/lib/utils';
 function Navbar() {
   return (
   <>   
@@ -49,7 +51,12 @@ function NavbarItem({label, link}:
     const isActive = pathname === link;
     return (
     <div className='relativec flex items-center'>
-        <link href={link}>{label}</link> 
+        <link href={link} className={
+            cn(buttonVariants({variant: "ghost"}),
+        "w-full justify-start text-lg text-muted-foreground",
+        isActive && "text-foreground"
+        )}>
+        {label}</link> 
     </div>
     )
     }
