@@ -7,7 +7,7 @@ ii)install clerk<br>
 iii) lucide react
   npm i lucide-react  
 iv)shadcn-ui
-  npx shadcn-ui@latest init
-   npx shadcn@latest add
+  npx shadcn-ui@latest init <br>
+   npx shadcn@latest add <br>
    npm i next-themes
 
